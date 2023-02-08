@@ -1,3 +1,4 @@
+
 package edu.kh.variable;
 
 import java.util.Scanner;
