@@ -8,9 +8,20 @@ public class OperatorPractice3 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("정수 입력 :"); 
-		
+		System.out.print("정수 입력 : ");
 		int input = sc.nextInt();
+		
+		System.out.println(input == 0 ? "0 입니다." : input > 0 ? "양수 입니다." : "음수 입니다.");
+		
+		System.out.print("정수 입력 : ");
+		input = sc.nextInt();
+		
+		System.out.println(input == 0 ? "0 입니다." : input > 0 ? "양수 입니다." : "음수 입니다.");
+		
+		System.out.print("정수 입력 : ");
+		input = sc.nextInt();
+		
+		System.out.println(input == 0 ? "0 입니다." : input > 0 ? "양수 입니다." : "음수 입니다.");
 		
 	}
 	
