@@ -2,7 +2,7 @@ package edu.kh.control.condition.ex;
 
 import java.util.Scanner;
 
-public class SwitchEx {
+public class SwitchEx { 
 
 	/* switch문 (switch - case문)
 	 * - 식 하나의 결과오 많은 경우의 수를 처리할 때 사용하는 조건문

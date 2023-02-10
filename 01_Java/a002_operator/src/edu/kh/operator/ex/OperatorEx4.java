@@ -23,8 +23,6 @@ public class OperatorEx4 {
 		
 		System.out.println(result);
 		
-		
-		
 	}
 
 }

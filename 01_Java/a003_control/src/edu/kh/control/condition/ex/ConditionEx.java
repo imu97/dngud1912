@@ -2,7 +2,7 @@ package edu.kh.control.condition.ex;
 
 import java.util.Scanner;
 
-public class ConditionEx {
+public class ConditionEx { 
 
 	public void test1() {
 		System.out.println("test1() 수행");

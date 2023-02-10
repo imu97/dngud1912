@@ -2,7 +2,7 @@ package edu.kh.control.condition.ex;
 
 import java.util.Scanner;
 
-public class SwitchRun {
+public class SwitchRun { 
 
 	public static void main(String[] args) {
 		

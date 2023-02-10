@@ -56,16 +56,6 @@ public class OperatorEx3 {
 		System.out.println("11은 짝수가 아니다 : " + !(11 % 2 == 0) ); 
 		
 		System.out.println( true || false && !false ); // true
-		  
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 	}
 }

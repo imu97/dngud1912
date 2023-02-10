@@ -1,6 +1,6 @@
 package edu.kh.control.condition.practice;
 
-public class ConditionPracticeRun {
+public class ConditionPracticeRun { 
 
 	public static void main(String[] args) {
 		
@@ -11,6 +11,6 @@ public class ConditionPracticeRun {
 //		cp.practice3();
 //		cp.practice4();
 //		cp.practice5();
-		
+		 
 	}
 }
