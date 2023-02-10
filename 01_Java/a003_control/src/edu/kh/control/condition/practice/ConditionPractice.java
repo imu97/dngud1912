@@ -35,27 +35,23 @@ public class ConditionPractice {
 		
 		
 		
-		
 	}
 	
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	public void practice3() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("1~12 사이의 정수 입력: ");
+		int month = sc.nextInt();
+		
+		String result;
+		
+		
+		
+		
 		
 	}
 	public void practice4() {
