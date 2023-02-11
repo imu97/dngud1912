@@ -7,23 +7,27 @@ public class OperatorPractice4 {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		
+
 		System.out.print("국어 : ");
-		int input1 = sc.nextInt();
+		int kor = sc.nextInt();
 		
 		System.out.print("영어 : ");
-		int input2 = sc.nextInt();
+		int eng = sc.nextInt();
 		
 		System.out.print("수학 : ");
-		int input3 = sc.nextInt();
+		int math = sc.nextInt();
 		
-		int result1 = input1 + input2 + input3;
+		// 합계
+		int sum = kor+ eng + math;
 		
-		System.out.println((result1));
-		System.out.println((double)result1 / 3 );
+		// 평균
+		double avg = sum / 3;
 		
-		boolean result2 = (input1 >= 40 && input2 >= 40 && input3 >= 40 &&(double)result1 / 3 >= 60); 
-		System.out.println("합격");
+		String result = (kor >= 40 && eng >= 40 && math >= 40 & avg >= 60 ? "합격" : "불합격");
+		
+		System.out.println("합계 : " + sum);
+		System.out.println("평균 : " + avg);
+		System.out.println(result);
 	}
 	
 	
