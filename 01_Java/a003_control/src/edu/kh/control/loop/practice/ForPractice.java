@@ -85,6 +85,7 @@ public class ForPractice {
 			int input = sc.nextInt();
 			
 			for(int i = 1; i <= 9; i++) {
+				System.out.printf("%d * %d = %d",input, i, 4*i);
 			}
 		}
 		
