@@ -128,12 +128,71 @@ public class ForPractice {
 				System.out.println();
 			}
 		} 
+		public void practice9() {
+			
+		}
+		public void practice10() {
+			
+		}
+		public void practice11() {
+			
+			Scanner sc = new Scanner(System.in);
+			
+			System.out.println("정수 입력 :  ");
+			int input = sc.nextInt();
+			
+			for(int row = 1; row <= input; row++) {
+				
+				/*for문 2개 사용*/
+//				//빈칸 먼저 출력
+//				for(int col = input - row; col >= 1; col--) {
+//					System.out.print(" ");
+//				}
+//				
+//				for(int col = 1; col <= row * 2 - 1; col++) {
+//					System.out.print("*");
+//				}
+//				
+//				System.out.println();
+//			}
+				
+				/*for문 1개, if-else 1개*/
+				
+				for(int col = 1; col <= input + row - 1; col++) {
+					
+					if(input - row >= col) {
+						System.out.print(" ");
+					} else {
+					System.out.print("*");
+					}
+				}
+				System.out.println();
+			}
+		}	
 		
+		public void practice12() {
+			
+			Scanner sc = new Scanner(System.in);
+			
+			System.out.println("정수 입력 : ");
+			int input = sc.nextInt();
+			
+			for(int row = 1; row <= input; row++) {
+				
+				for(int col = 1; col <= input; col++) {
+					if(row == 1 || row == input || col == 1 || col == input) {
+						System.out.print("*");
+					}else {
+						System.out.print(" ");
+					}
+				}
+				System.out.println();
+			}
+		}
 		
-		
-		
-		
-		
+		public void practice13() {
+			
+		}
 		
 		
 		
