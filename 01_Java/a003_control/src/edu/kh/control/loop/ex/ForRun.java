@@ -30,7 +30,7 @@ public class ForRun {
 //		fx.ex19();
 //		fx.ex20();
 //		fx.ex21();
-		fx.ex22();
+//		fx.ex22();
 		
 	}
 }

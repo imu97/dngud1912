@@ -194,7 +194,7 @@ public class ForEx {
 			Scanner sc = new Scanner(System.in);
 			
 			System.out.printf("입력 받을 정수의 개수 : ");
-			int input =sc.nextInt();
+			int input = sc.nextInt();
 			int sum = 0;
 			
 			for(int i = 1; i <= input ; i++) {
