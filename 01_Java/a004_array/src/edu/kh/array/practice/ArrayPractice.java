@@ -61,17 +61,39 @@ public void ex1() {
 		Scanner sc = new Scanner(System.in);
 		
 		int arr[] = new int[5];
-		int index = 0;	
 		
-		for(int i = 0; i < 5; i++) {
-			System.out.printf("입력 %d : ", i);
-			int input = sc.nextInt();
-			
-		}	
+		System.out.print("입력 0 : ");
+		int num0 = sc.nextInt();
+		System.out.print("입력 1 : ");
+		int num1 = sc.nextInt();
+		System.out.print("입력 2 : ");
+		int num2 = sc.nextInt();
+		System.out.print("입력 3 : ");
+		int num3 = sc.nextInt();
+		System.out.print("입력 4 : ");
+		int num4 = sc.nextInt();
+		System.out.print("검색할 값 : ");
+		int i = sc.nextInt();
 		
 	}
-	
-	
+	public void ex5() {}
+	public void ex6() {}
+	public void ex7() {}
+	public void ex8() {}
+	public void ex9() {}
+	public void ex11() {}
+	public void ex12() {}
+	public void ex13() {}
+	public void ex14() {}
+	public void ex15() {}
+	public void ex17() {}
+	public void ex18() {}
+	public void ex19() {}
+	public void ex20() {}
+	public void ex21() {}
+	public void ex22() {}
+	public void ex23() {}
+	public void ex24() {}
 	
 	
 	

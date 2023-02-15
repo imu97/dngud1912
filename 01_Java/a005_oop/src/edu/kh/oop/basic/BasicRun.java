@@ -1,9 +1,8 @@
-package eud.kh.oop.basic;
+package edu.kh.oop.basic;
 
 public class BasicRun {
-
 	public static void main(String[] args) {
-	
+		
 		// Java에서의 Object == 클래스의 정의된 내용을 토대로
 		//						new 연산자를 통해 메모리에 생성되는 것
 		
@@ -39,6 +38,7 @@ public class BasicRun {
 		n1.speakkorean();
 	
 	}
+
 
 
 
