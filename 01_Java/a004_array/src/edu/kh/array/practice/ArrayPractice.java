@@ -60,23 +60,52 @@ public void ex1() {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		int arr[] = new int[5];
+		int[] arr = new int[5];
 		
-		System.out.print("입력 0 : ");
-		int num0 = sc.nextInt();
-		System.out.print("입력 1 : ");
-		int num1 = sc.nextInt();
-		System.out.print("입력 2 : ");
-		int num2 = sc.nextInt();
-		System.out.print("입력 3 : ");
-		int num3 = sc.nextInt();
-		System.out.print("입력 4 : ");
-		int num4 = sc.nextInt();
+		for(int i = 0; i < arr.length; i++) {
+			System.out.printf("입력 %d : ",i);
+			arr[i] = sc.nextInt();
+		}
 		System.out.print("검색할 값 : ");
-		int i = sc.nextInt();
-		
+		int x = sc.nextInt();
+			
+		for(int i = 0; i < arr.length; i++) {
+			
+			if(x == arr[i]) {
+				System.out.printf("인덱스 : %d", i);break;
+			} else {
+				
+				if(i == arr.length - 1) {
+					System.out.print("일치하는 값이 존재하지 않습니다.");
+				}
+			} 
+		}
 	}
-	public void ex5() {}
+	
+	
+	public void ex5() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String[] str = new String[11];
+		
+		System.out.print("문자열 : ");
+		String st = sc.next();
+		
+		System.out.print("문자 : ");
+		String ch = sc.next();
+		
+		String app = "application";
+		
+		
+		
+		System.out.println("application에 i가 존재하는 위치(인덱스) : " );
+	}
+	
+	
+	
+	
+	
 	public void ex6() {}
 	public void ex7() {}
 	public void ex8() {}
