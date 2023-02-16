@@ -98,7 +98,6 @@ public void ex1() {
 		String app = "application";
 		
 		
-		
 		System.out.println("application에 i가 존재하는 위치(인덱스) : " );
 	}
 	
@@ -115,7 +114,40 @@ public void ex1() {
 	public void ex13() {}
 	public void ex14() {}
 	public void ex15() {}
-	public void ex17() {}
+	
+	
+	
+	public void ex16() {
+		
+		int[][] arr = {{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};
+		
+		for(int row = 0; row < arr.length; row++) {
+		
+			for(int col = 0; col < arr[row].length; col++) {
+				System.out.printf("%4d",arr[row][col]);
+			}
+			System.out.println();
+		}
+	}
+	
+	
+	
+	public void ex17() {
+		
+		int[][] arr = {{16,15,14,13},{12,11,10,9},{8,7,6,5},{4,3,2,1}};
+		
+		for(int row = 0; row < arr.length; row++) {
+		
+			for(int col = 0; col < arr[row].length; col++) {
+				System.out.printf("%4d",arr[row][col]);
+			}
+			System.out.println();
+		}
+	}
+	
+	
+	
+	
 	public void ex18() {}
 	public void ex19() {}
 	public void ex20() {}

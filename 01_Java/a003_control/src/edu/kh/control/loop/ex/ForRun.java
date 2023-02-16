@@ -17,7 +17,7 @@ public class ForRun {
 		// 응용
 //		fx.ex7();
 //		fx.ex8();
-//		fx.ex9();
+		fx.ex9();
 //		fx.ex10();
 //		fx.ex11();
 //		fx.ex12();

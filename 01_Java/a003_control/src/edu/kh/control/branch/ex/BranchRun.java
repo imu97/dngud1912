@@ -11,7 +11,7 @@ public class BranchRun {
 //		be.ex3();
 //		be.ex4();
 //		be.ex5();
-		be.ex6();
+//		be.ex6();
 //		be.upDownGame();
 		
 		
