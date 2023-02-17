@@ -360,7 +360,7 @@ public class ArrayEx1 {
 		System.out.println("------------------------------------------");
 		
 		// 깊은 복사 확인
-		int[] arr2 = {5,6,7,8,};
+		int[] arr2 = {5,6,7,8};
 		
 		// 깊은 복사를 진행할 arr2 배열과 같은 크기의 배열을 준비
 		int[] copyArr2 = new int[arr2.length];

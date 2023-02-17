@@ -63,19 +63,16 @@ public class ForPractice {
 		}
 		
 		
-//		public void practice4() {
-//			
-//			Scanner sc = new Scanner(System.in);
-//			
-//			System.out.print("첫 번째 숫자 :");
-//			int input1 = sc.nextInt();
-//			System.out.print("두 번째 숫자 :");
-//			int input2 = sc.nextInt();
-//			
-//			if(input1 < 0 && input2 < 0) {
-//				System.out.print("1 이상의 숫자를 입력해주세요.");
-//			}
-//		}
+		public void practice4() {
+			
+			Scanner sc = new Scanner(System.in);
+			
+			System.out.print("첫 번째 숫자 :");
+			int input1 = sc.nextInt();
+			System.out.print("두 번째 숫자 :");
+			int input2 = sc.nextInt();
+			
+		}
 		
 	
 		public void practice5() {
