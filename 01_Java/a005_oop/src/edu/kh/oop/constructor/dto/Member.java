@@ -16,7 +16,7 @@ public class Member {
 	public static String programName;
 	
 	
-	// 초기화 블럭 : 필들를 초기화(값 대입)하는 목적의 블럭 {}
+	// 초기화 블럭 : 필드를 초기화(값 대입)하는 목적의 블럭 {}
 	
 	// 인스턴스 초기화 블럭 : 인스턴스 변수를 초기화 하는 블럭  
 	{
@@ -39,7 +39,7 @@ public class Member {
 	// 생성자 : 객체를 생성하는 기능
 	
 	// 생성자 작성 규칙
-	// 1. 반환형 (void, int String..) 이 ㅇ없다
+	// 1. 반환형 (void, int String..) 이 없다
 	// 2. 생성자명은 클래스와 동일
 	
 	public Member() { // 기본 생성자	

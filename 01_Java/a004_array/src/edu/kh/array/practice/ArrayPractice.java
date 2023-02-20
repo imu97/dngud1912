@@ -1,14 +1,16 @@
 package edu.kh.array.practice;
 
+import java.nio.file.spi.FileSystemProvider;
 import java.util.Scanner;
+
+import javax.print.StreamPrintServiceFactory;
+import javax.swing.plaf.synth.SynthScrollBarUI;
 
 public class ArrayPractice {
 
 public void ex1() {
 		
-		int[] arr;
-		
-		arr = new int[9];
+		int[] arr = new int[9];
 		
 		int sum = 0;
 		
@@ -90,15 +92,27 @@ public void ex1() {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		String str = "application";
-		char ch = str.charAt(0);
-		
 		System.out.print("문자열 : ");
-		String st = sc.next();
+		String str = sc.next();
+		System.out.print("문자 : ");
+		char ch = sc.next().charAt(0);
+
+		char[] arr = new char[str.length()];
 		
+		System.out.print("application에 " + ch + "가 존재하는 위치(인덱스) : ");
 		
+		int cnt = 0;
 		
-		
+		for(int i = 0; i < str.length(); i++) {
+			arr[i] = str.charAt(i);
+			
+			if(ch == arr[i]) {
+				System.out.print(i + " ");
+				cnt++;
+			}
+		}
+		System.out.println();
+		System.out.print(ch + " 개수 : " + cnt);
 	}
 	
 	
@@ -136,17 +150,63 @@ public void ex1() {
 		System.out.println("총합 : " + sum);
 		
 	}
+
+	
 	public void ex7() {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("주민등록번호(-포함) :");
+		System.out.print("주민등록번호(-포함) : ");
+		String str = sc.next();
 		
+		char[] arr = new char[14];
+		
+		for(int i = 0; i < 14; i++) {
+			arr[i] = str.charAt(i);
+		}
+		
+		for(int i = 0; i < 14; i++) { 
+		
+			if(i < 8) {
+				System.out.print(arr[i]);
+			} else {
+				System.out.print("*");
+			}
+		}
 	}
 	
 	
 	
-	public void ex8() {}
+	public void ex8() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("정수 : ");
+		int input = sc.nextInt();
+		
+		if(input % 2 == 0 || input < 3) {
+			System.out.println("다시 입력하세요.");
+		} else {
+			
+			int[] arr = new int[input];
+			
+			for(int i = 0; i < arr.length; i++) {
+				arr[i] = i + 1;
+			}
+			for(int i = 0; i < arr.length; i++) {
+				if(i > arr.length / 2) {
+					arr[i] = arr.length - i;
+				} else {
+					arr[i] = i + 1;
+				}
+				
+				if(i != 0) {
+					System.out.print(", ");
+				}
+				System.out.print(arr[i]);
+			}
+		}
+	}
 	
 	
 	
@@ -172,10 +232,13 @@ public void ex1() {
 		
 		System.out.print("발생한 난수 : ");
 		
-		for(int i = 0; i <= arr.length; i++) {
+		for(int i = 0; i < arr.length; i++) {
 			double x = (int)(Math.random() * 10 + 1);
 			
 			System.out.print((int)x + " ");
+			
+			arr[i] = (int)x;  
+			
 		}
 		System.out.println();
 	
@@ -184,6 +247,7 @@ public void ex1() {
 		
 		for(int i = 0; i < arr.length; i++) {
 				
+			
 			if(arr[i] > max) {
 				max = arr[i];
 			} 
@@ -198,12 +262,83 @@ public void ex1() {
 		
 	}
 		
-		
-		
 	
-	public void ex11() {}
-	public void ex12() {}
-	public void ex13() {}
+	
+	public void ex11() {
+		
+		int[] arr = new int[10];
+		
+		for(int i = 0; i < arr.length; i++) {
+			int temp = (int)(Math.random() * 10 + 1);
+			
+			arr[i] = temp;
+
+			for(int j = 0; j < i; j++) {
+				if(arr[j] == temp) {
+					i--; 
+					break;
+				}
+			}
+		}
+		for(int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i] + " ");
+		}
+	}
+	
+	
+	
+	
+	public void ex12() {
+		
+		int[] arr = new int[6];
+		
+		for(int i = 0; i < arr.length; i++) {
+			int x = (int)(Math.random() * 45 + 1);
+			
+			arr[i] = x;
+
+			for(int j = 0; j < i; j++) {
+				if(arr[j] == x) {
+					i--; 
+					break;
+				}
+			}
+		}
+		
+		for(int i = 0; i < arr.length; i++) {
+			for(int j = i + 1; j < arr.length; j++) {
+				if(arr[i] > arr[j]) {
+					int temp = arr[i];
+					arr[i] = arr[j];
+					arr[j] = temp;
+				}
+			}
+			System.out.print(arr[i] + " ");
+		}
+	}
+	
+	public void ex13() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("문자열 : ");
+		String str = sc.next();
+		
+		char[] arr = new char[str.length()];
+		
+		for(int i = 0; i < str.length(); i++) {
+			arr[i] = str.charAt(i);
+			for(int j = 0; j < i - 1; j++) {
+				if(arr[i] != arr[j]) {
+					System.out.print(arr[i]);
+					break;
+				}
+			}
+		}
+
+	}
+	
+	
 	public void ex14() {}
 	
 	
@@ -248,6 +383,7 @@ public void ex1() {
 			}
 			System.out.println();
 		}
+		System.out.println();
 	}
 	
 	
@@ -260,17 +396,6 @@ public void ex1() {
 	public void ex22() {}
 	public void ex23() {}
 	public void ex24() {}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	
