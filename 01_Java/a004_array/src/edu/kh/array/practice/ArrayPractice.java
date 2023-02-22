@@ -516,9 +516,17 @@ public void ex1() {
 				
 				arr[LAST_ROW_INDEX][LAST_COL_INDEX] += arr[row][col];
 				
+				arr[row][LAST_COL_INDEX] += arr[row][col];
+				arr[LAST_ROW_INDEX][col] += arr[row][col];
+				
 			}
 		}
-		
+		for(int row = 0; row <= LAST_ROW_INDEX; row++) {
+			for(int col = 0; col <= LAST_COL_INDEX; col++) {
+				System.out.printf("%3d", arr[row][col]);
+			}
+			System.out.println();
+		}
 	}
 	
 	
