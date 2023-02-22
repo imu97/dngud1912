@@ -2,6 +2,7 @@ package edu.kh.array.practice;
 
 import java.nio.file.spi.FileSystemProvider;
 import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 
 import javax.lang.model.util.ElementScanner7;
@@ -483,7 +484,6 @@ public void ex1() {
 	}
 	
 	
-	
 	public void ex17() {
 		
 		int[][] arr = {{16,15,14,13},{12,11,10,9},{8,7,6,5},{4,3,2,1}};
@@ -499,9 +499,29 @@ public void ex1() {
 	}
 	
 	
+	public void ex18() {
+		
+		int[][] arr = new int[4][4];
+		
+		final int LAST_ROW_INDEX = arr.length - 1;
+		final int LAST_COL_INDEX = arr[0].length - 1;
+		
+		Random random = new Random();
+		
+		for(int row = 0; row < LAST_ROW_INDEX; row++) {
+			
+			for(int col = 0; col < LAST_ROW_INDEX; col++) {
+				
+				arr[row][col] = random.nextInt(10) + 1;
+				
+				arr[LAST_ROW_INDEX][LAST_COL_INDEX] += arr[row][col];
+				
+			}
+		}
+		
+	}
 	
 	
-	public void ex18() {}
 	public void ex19() {}
 	public void ex20() {}
 	public void ex21() {}
