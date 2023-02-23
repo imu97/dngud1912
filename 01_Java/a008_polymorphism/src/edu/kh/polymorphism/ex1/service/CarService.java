@@ -54,7 +54,7 @@ public class CarService {
 //		c1.print();
 //		c1.getDiscountOffer();
 
-		// KightCar로 c1을 강제 형변환
+		// LightCar로 c1을 강제 형변환
 		// -> c1이 LightCar 객체를 모두 참조 가능
 		// == 다운 캐스팅
 		((LightCar)c1).print();

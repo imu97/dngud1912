@@ -60,7 +60,7 @@ public class Child1 extends Parnet{
 		//		  같은 toString()은 계속 반복해서 호출(== 재귀 호출)
 		//return car + " / " + toString();
 		
-		// 해결 방법 : 부모의  toString() 호출을 명시 -> supwr. 참조변수 이용
+		// 해결 방법 : 부모의  toString() 호출을 명시 -> super. 참조변수 이용
 		return car + " / " + super.toString();
 							// money + " / " + lastName;
 	}
