@@ -52,7 +52,7 @@ public class APIView {
 				}
 				
 			} catch(InputMismatchException e) {
-				// Scanner 입력이 잘못괸 경우
+				// Scanner 입력이 잘못된 경우
 				System.out.println("잘못된 형식을 입력하셨습니다. 다시 시도해주세요");
 				sc.nextLine();	// 입력버퍼에 남아있는
 								// 잘못 입력된 문자열을 읽어와 없앰
@@ -189,7 +189,7 @@ public class APIView {
 		// 새로운 문자열이 추가되어도
 		// 객체의 주소는 변하지 않음 == 가변성(mutable)
 		// -> 문자열 수정 시 새로운 객체를 생성하지 않아
-		//    메모리 소비르 절약할 수 있다.
+		//    메모리 소비를 절약할 수 있다.
 		
 		// insert(인덱스, 문자열) : 중간 삽입
 		

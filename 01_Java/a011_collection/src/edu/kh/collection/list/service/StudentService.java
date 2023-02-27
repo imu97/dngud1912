@@ -28,8 +28,8 @@ public class StudentService {
 	}
 
 
-	/**
-	 * @return
+	/** 학생 전체 조회 서비스
+	 * @return studentList
 	 */
 	public List<Student> selectAll() {
 		return studentList;
