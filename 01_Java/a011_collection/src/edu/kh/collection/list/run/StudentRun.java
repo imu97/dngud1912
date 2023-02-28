@@ -6,9 +6,9 @@ public class StudentRun {
 
 	public static void main(String[] args) {
 		
-		StudentView View = new StudentView();
+		StudentView view = new StudentView();
 		
-		View.displayMenu();
+		view.displayMenu();
 				
 	}
 }
